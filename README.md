@@ -10,7 +10,7 @@
 <ol>
 	<li>C:\Program Files\MySQL\MySQL Server 5.7\bin> mysqldump -u database_user --password -h localhost database_name > C:\Users\tangupta\Desktop\AppDatabase_Backup.sql (Please change this path where you want to take backup)
 Enter password: ***********</li>
-	<li>In case, you are not able to run the above command and getting the error like "mysqldump: Got error: 1045: Access denied for user 'ODBC'@'localhost' (using password: NO) when trying to connect", Please check whether you had granted all the privilages on this box database (local_esbox) in Mysql. if not , Please execute the below command on Mysql Command line client for the same -                       mysql> grant all privileges on db_name.* to 'username'@'localhost' identified by 'password';</li>
+	<li>In case, you are not able to run the above command and getting the error like "mysqldump: Got error: 1045: Access denied for user 'ODBC'@'localhost' (using password: NO) when trying to connect", Please check whether you had granted all the privilages on this database (local_app) in Mysql. if not , Please execute the below command on Mysql Command line client for the same -                       mysql> grant all privileges on db_name.* to 'username'@'localhost' identified by 'password';</li>
 </ol>
 </li>
 </ol>
@@ -38,7 +38,8 @@ Enter password: ***********</li>
 </li>
 </ol>
 </li>
-	<li>Upgrade the Box App from PHP 5.5 to PHP 5.6.</li>
+	<li>Upgrade the 
+	App from PHP 5.5 to PHP 5.6.</li>
 	<li>Update the crypt_key as per PHP5.6 statndard (Only keys of sizes 16, 24 or 32 supported) in the chef-recipe-bag.</li>
 	<li>Deploy the application.</li>
 	<li>In case there is any failure, Please rollback the database by using below steps-

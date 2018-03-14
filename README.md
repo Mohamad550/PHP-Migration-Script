@@ -58,3 +58,13 @@ Enter password: ***********</li>
 </ol>
 </div>
 <div id="likes-and-labels-container"></div>
+
+
+## Copyright 
+
+Copyright (c) 2018 Tanuj Gupta
+
+---
+
+> GitHub [@guptakumartanuj](https://github.com/guptakumartanuj) &nbsp;&middot;&nbsp;
+> [Blog](https://guptakumartanuj.wordpress.com/) &nbsp;&middot;&nbsp;
